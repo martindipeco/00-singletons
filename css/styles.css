@@ -1,0 +1,209 @@
+/* Singleton Styles */
+/* Based on https://broko-de.github.io/proyecto-cac/ */
+
+/* Eliminate all default margins */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial, helvetica;
+    color: #000;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px; /* before: 20px 60px */
+    background-color: #031d2e;
+    position: sticky;
+    top: 0;
+    z-index: 999; /* z-index: order layer. The bigger the index, the upper it will appear*/
+}
+
+/* dot "." indicates class selector */
+.nav-logo img{
+    width: 25%; /* before: 20% */
+}
+
+.nav-links{
+    list-style: none;
+}
+
+/* space " " selector -> all "li" in "navlinks" */
+.nav-links li{
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+.nav-links li a{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 700; /* before: 800 */
+}
+
+.nav-links li a:hover{
+    color: #EB9B3F;
+    font-weight: 700; /* before: 800 */
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+/* hash "#" -> id selector */
+#home{
+    display: block;
+    padding: 0px 100px;
+    /* max-width: 1080px; */
+    margin: auto;
+    background-color: #031d2e;
+    height: 700px;
+}
+
+/* id "#" + class "." */
+#home .col{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#home p{
+    margin-top: 100px;
+    font-size: 1.5rem;
+    color: #FFF;
+    text-align: left;
+}
+
+#home h1{
+    font-size: 4.5rem;
+    color: #EB9B3F;
+    text-align: left;
+}
+
+.img-home{
+    width: 80%;
+}
+
+#about-us{
+    display: block;
+}
+
+/* transition image */
+.wave{
+    margin-top:-340px;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#about-us{
+    background-color: #FFF;
+}
+
+#about-us p{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    padding: 30px 0px;
+    font-size: 20px;
+}
+
+#songs{
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
+    display: block;
+    width: 80%;
+    margin: 40px auto;
+}
+
+#songs .col{
+    float: left;
+    width: 33.333333333%;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 40px 0px;
+}
+
+#songs h3{
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+.songs-icon-1, .songs-icon-2, .songs-icon-3{
+    width: 50%;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px 0px;
+    margin: 20px 0px;
+}
+
+/* transitioning transparency effect */
+.parallax{
+    /* image path and file name */
+    background-image: url("../assets/parallax.jpg");
+    /* Set a specific height */
+    min-height: 300px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clear: both;
+}
+
+#contact{
+    background-color: #FFF;
+}
+
+#contact .col{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.input{
+    border: 2px solid #031d2e;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.btn{
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: #031d2e;
+    color: #FFF;
+    border-color: #000;
+}
+
+.btn:hover{
+    color: #000;
+}
+
+footer a:link {
+    text-decoration: None;
+}
+
+footer{
+    height: 40px;
+    padding:60px 0px;
+    background: #031d2e;
+    text-align: center;
+    color: #EB9B3F;
+    clear: both;
+}
